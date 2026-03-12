@@ -1,4 +1,4 @@
-import { Outlet, Link, createRootRoute } from '@tanstack/react-router';
+import { Outlet, Link, createRootRoute } from "@tanstack/react-router";
 
 export const Route = createRootRoute({
   component: RootLayout,
@@ -12,6 +12,20 @@ function RootLayout() {
           <Link to="/" className="text-xl font-bold">
             KudoBoard
           </Link>
+          <div className="flex gap-4">
+            <Link
+              to="/"
+              className="text-muted-foreground hover:text-foreground [&.active]:text-foreground [&.active]:font-semibold"
+            >
+              Boards
+            </Link>
+            <Link
+              to="/about"
+              className="text-muted-foreground hover:text-foreground [&.active]:text-foreground [&.active]:font-semibold"
+            >
+              About
+            </Link>
+          </div>
         </nav>
       </header>
       <main className="mx-auto max-w-5xl px-4 py-8">
