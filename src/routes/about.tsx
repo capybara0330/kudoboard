@@ -10,8 +10,8 @@ function AboutPage() {
       <h1 className="mb-4 text-3xl font-bold">About</h1>
       <p className="text-muted-foreground">
         KudoBoard lets you create boards to share kind messages and
-        appreciation. Create a board for someone, then invite others to
-        add their kudos!
+        appreciation. Create a board for someone, then invite others to add
+        their kudos!
       </p>
     </div>
   );
