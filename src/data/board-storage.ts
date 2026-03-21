@@ -3,7 +3,8 @@ import { INITIAL_BOARDS } from "./boards";
 
 const STORAGE_KEY = "kudoboard-boards";
 
-export function loadBoard(_: null = null): Board[] {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function loadBoards(_: null = null): Board[] {
   const stored = localStorage.getItem(STORAGE_KEY);
 
   if (!stored) {
